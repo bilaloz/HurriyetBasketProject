@@ -12,8 +12,6 @@ import androidx.test.filters.MediumTest
 import com.hurriyet.basketapp.R
 import com.hurriyet.basketapp.view.ProductDetailFragment
 import com.hurriyet.basketapp.view.ProductDetailFragmentDirections
-import com.hurriyet.basketapp.view.ProductListFragment
-import kotlinx.android.synthetic.main.products_detail_page_fragment.view.*
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mockito
