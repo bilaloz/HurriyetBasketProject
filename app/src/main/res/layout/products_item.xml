@@ -14,7 +14,7 @@
 
         <variable
             name="listener"
-            type="com.hurriyet.basketapp.listener.ProductBtnClickListener" />
+            type="com.hurriyet.basketapp.ui.listener.ProductBtnClickListener" />
 
     </data>
 

@@ -17,8 +17,6 @@ import com.hurriyet.basketapp.ui.listener.DecreaseBtnClickListener
 import com.hurriyet.basketapp.ui.listener.IncrementBtnClickListener
 import com.hurriyet.basketapp.ui.listener.RemoveOnClickListener
 import com.hurriyet.basketapp.model.Basket
-import com.hurriyet.basketapp.view.ProductDetailFragmentArgs
-import com.hurriyet.basketapp.view.ProductDetailFragmentDirections
 import kotlinx.android.synthetic.main.products_detail_page_fragment.*
 
 class ProductDetailFragment : Fragment(R.layout.products_detail_page_fragment),

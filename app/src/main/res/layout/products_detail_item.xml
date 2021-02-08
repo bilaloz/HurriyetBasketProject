@@ -14,16 +14,16 @@
 
         <variable
             name="remove"
-            type="com.hurriyet.basketapp.listener.RemoveOnClickListener" />
+            type="com.hurriyet.basketapp.ui.listener.RemoveOnClickListener" />
 
 
         <variable
             name="decrease"
-            type="com.hurriyet.basketapp.listener.DecreaseBtnClickListener" />
+            type="com.hurriyet.basketapp.ui.listener.DecreaseBtnClickListener" />
 
         <variable
             name="increment"
-            type="com.hurriyet.basketapp.listener.IncrementBtnClickListener" />
+            type="com.hurriyet.basketapp.ui.listener.IncrementBtnClickListener" />
 
     </data>
 

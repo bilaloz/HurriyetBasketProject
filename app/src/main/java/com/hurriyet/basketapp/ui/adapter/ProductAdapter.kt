@@ -12,7 +12,7 @@ import com.hurriyet.basketapp.R
 import com.hurriyet.basketapp.databinding.ProductsItemBinding
 import com.hurriyet.basketapp.ui.listener.ProductBtnClickListener
 import com.hurriyet.basketapp.model.Product
-import com.hurriyet.basketapp.view.ProductListFragmentDirections
+import com.hurriyet.basketapp.ui.productListFragment.ProductListFragmentDirections
 
 class ProductAdapter() :
     RecyclerView.Adapter<ProductAdapter.ProductViewHolder>(),
