@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/button">
+
+        <TextView
+            android:id="@+id/productDetailHeaderText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MY CART"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productDetailRecyclerView"
+            android:layout_width="355dp"
+            android:layout_height="556dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productDetailHeaderText" />
+
+        <Button
+            android:id="@+id/productDetailContinueShopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Countunie Shopping"
+            android:textSize="11sp"
+            app:backgroundTint="#787878"
+            app:layout_constraintStart_toStartOf="@+id/productDetailRecyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/productDetailRecyclerView" />
+
+        <Button
+            android:id="@+id/productDetailPlaceHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:text="PLACE ORDER"
+            android:textSize="11sp"
+            app:backgroundTint="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productDetailRecyclerView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
