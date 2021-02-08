@@ -35,6 +35,12 @@ Use Technology
    
    <br> <br>
    
+   <h3> App Recording and Medium Test Video Dowloand <h3>
+   https://www.icloud.com/iclouddrive/0IZ0mJhofub53TBQghIwhzVOg#project-hurriyet
+ 
+   <br> <br>
+ 
+   
    <h3> App Screen Shoot </h3>
    
    <br> <br>
