@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.hurriyet.basketapp.model.Basket
 import com.hurriyet.basketapp.model.Product
-import com.hurriyet.basketapp.roomdb.ProductDao
 
 
 class FakeRepository {

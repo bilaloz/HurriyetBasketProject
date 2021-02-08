@@ -1,9 +1,8 @@
-package com.hurriyet.basketapp.service
+package com.hurriyet.basketapp.data.remote.service
 
 import com.hurriyet.basketapp.model.Basket
 import com.hurriyet.basketapp.model.Product
 import io.reactivex.Single
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory

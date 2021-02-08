@@ -1,4 +1,4 @@
-package com.hurriyet.basketapp.viewmodel
+package com.hurriyet.basketapp.ui.baseViewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

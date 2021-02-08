@@ -1,12 +1,13 @@
-package com.hurriyet.basketapp.viewmodel
+package com.hurriyet.basketapp.ui.productDetailFragment
 
 import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.hurriyet.basketapp.model.Basket
 import com.hurriyet.basketapp.model.Product
-import com.hurriyet.basketapp.service.ProductAPIService
-import com.hurriyet.basketapp.roomdb.ProductDatabase
+import com.hurriyet.basketapp.data.remote.service.ProductAPIService
+import com.hurriyet.basketapp.data.local.roomdb.ProductDatabase
+import com.hurriyet.basketapp.ui.baseViewModel.BaseViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver

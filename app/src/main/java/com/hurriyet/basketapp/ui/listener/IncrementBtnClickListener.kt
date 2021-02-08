@@ -1,4 +1,4 @@
-package com.hurriyet.basketapp.listener
+package com.hurriyet.basketapp.ui.listener
 
 import android.view.View
 import com.hurriyet.basketapp.model.Basket

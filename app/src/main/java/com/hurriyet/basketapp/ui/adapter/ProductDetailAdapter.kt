@@ -1,7 +1,6 @@
-package com.hurriyet.basketapp.adapter
+package com.hurriyet.basketapp.ui.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -9,11 +8,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.hurriyet.basketapp.R
 import com.hurriyet.basketapp.databinding.ProductsDetailItemBinding
-import com.hurriyet.basketapp.listener.DecreaseBtnClickListener
-import com.hurriyet.basketapp.listener.IncrementBtnClickListener
-import com.hurriyet.basketapp.listener.RemoveOnClickListener
+import com.hurriyet.basketapp.ui.listener.DecreaseBtnClickListener
+import com.hurriyet.basketapp.ui.listener.IncrementBtnClickListener
+import com.hurriyet.basketapp.ui.listener.RemoveOnClickListener
 import com.hurriyet.basketapp.model.Basket
-import com.hurriyet.basketapp.model.Product
 
 class ProductDetailAdapter(
     private val decreaseBtnClickListener: DecreaseBtnClickListener,

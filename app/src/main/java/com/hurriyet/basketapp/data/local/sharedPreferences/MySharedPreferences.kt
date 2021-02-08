@@ -1,4 +1,4 @@
-package com.hurriyet.basketapp.helper
+package com.hurriyet.basketapp.data.local.sharedPreferences
 
 
 import android.content.Context
@@ -19,10 +19,14 @@ class MySharedPreferences {
 
         private val lock = Any()
 
-        operator fun invoke(context: Context): MySharedPreferences = instance ?: synchronized(
-            lock
+        operator fun invoke(context: Context): MySharedPreferences = instance
+            ?: synchronized(
+                lock
         ) {
-            instance ?: createCustomSharedPreferences(context).also {
+            instance
+                ?: createCustomSharedPreferences(
+                    context
+                ).also {
                 instance = it
             }
         }
@@ -39,6 +43,7 @@ class MySharedPreferences {
         }
     }
 
-    fun getTime() = preferences?.getLong(PREFERENCES_TIME, 0)
+    fun getTime() = preferences?.getLong(
+        PREFERENCES_TIME, 0)
 
 }

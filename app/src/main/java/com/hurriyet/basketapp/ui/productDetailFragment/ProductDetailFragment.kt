@@ -1,10 +1,8 @@
-package com.hurriyet.basketapp.view
+package com.hurriyet.basketapp.ui.productDetailFragment
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -14,13 +12,13 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.hurriyet.basketapp.R
-import com.hurriyet.basketapp.adapter.ProductAdapter
-import com.hurriyet.basketapp.adapter.ProductDetailAdapter
-import com.hurriyet.basketapp.listener.DecreaseBtnClickListener
-import com.hurriyet.basketapp.listener.IncrementBtnClickListener
-import com.hurriyet.basketapp.listener.RemoveOnClickListener
+import com.hurriyet.basketapp.ui.adapter.ProductDetailAdapter
+import com.hurriyet.basketapp.ui.listener.DecreaseBtnClickListener
+import com.hurriyet.basketapp.ui.listener.IncrementBtnClickListener
+import com.hurriyet.basketapp.ui.listener.RemoveOnClickListener
 import com.hurriyet.basketapp.model.Basket
-import com.hurriyet.basketapp.viewmodel.ProductDetailViewModel
+import com.hurriyet.basketapp.view.ProductDetailFragmentArgs
+import com.hurriyet.basketapp.view.ProductDetailFragmentDirections
 import kotlinx.android.synthetic.main.products_detail_page_fragment.*
 
 class ProductDetailFragment : Fragment(R.layout.products_detail_page_fragment),
@@ -38,7 +36,9 @@ class ProductDetailFragment : Fragment(R.layout.products_detail_page_fragment),
 
 
         arguments?.let {
-            val id = ProductDetailFragmentArgs.fromBundle(it).productId
+            val id = ProductDetailFragmentArgs.fromBundle(
+                it
+            ).productId
             viewModel.insertBasket(id)
         }
 

@@ -1,4 +1,4 @@
-package com.hurriyet.basketapp.roomdb
+package com.hurriyet.basketapp.data.local.roomdb
 
 import android.content.Context
 import androidx.room.Database

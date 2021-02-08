@@ -1,9 +1,8 @@
-package com.hurriyet.basketapp.adapter
+package com.hurriyet.basketapp.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -11,7 +10,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.hurriyet.basketapp.R
 import com.hurriyet.basketapp.databinding.ProductsItemBinding
-import com.hurriyet.basketapp.listener.ProductBtnClickListener
+import com.hurriyet.basketapp.ui.listener.ProductBtnClickListener
 import com.hurriyet.basketapp.model.Product
 import com.hurriyet.basketapp.view.ProductListFragmentDirections
 

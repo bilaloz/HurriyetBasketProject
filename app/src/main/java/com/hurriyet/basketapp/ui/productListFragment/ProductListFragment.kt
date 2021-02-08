@@ -1,7 +1,7 @@
-package com.hurriyet.basketapp.view
+package com.hurriyet.basketapp.ui.productListFragment
 
 import android.content.Context
-import com.hurriyet.basketapp.adapter.ProductAdapter
+import com.hurriyet.basketapp.ui.adapter.ProductAdapter
 import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hurriyet.basketapp.R
-import com.hurriyet.basketapp.viewmodel.ProductListViewModel
 import kotlinx.android.synthetic.main.products_page_fragment.*
 
 

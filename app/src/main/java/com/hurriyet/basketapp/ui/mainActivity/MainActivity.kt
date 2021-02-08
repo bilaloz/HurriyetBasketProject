@@ -1,4 +1,4 @@
-package com.hurriyet.basketapp.view
+package com.hurriyet.basketapp.ui.mainActivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

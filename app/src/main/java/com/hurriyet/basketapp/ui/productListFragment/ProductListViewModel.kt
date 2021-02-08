@@ -1,13 +1,14 @@
-package com.hurriyet.basketapp.viewmodel
+package com.hurriyet.basketapp.ui.productListFragment
 
-import com.hurriyet.basketapp.service.ProductAPIService
-import com.hurriyet.basketapp.roomdb.ProductDatabase
+import com.hurriyet.basketapp.data.remote.service.ProductAPIService
+import com.hurriyet.basketapp.data.local.roomdb.ProductDatabase
 import android.app.Application
 import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.hurriyet.basketapp.helper.MySharedPreferences
+import com.hurriyet.basketapp.data.local.sharedPreferences.MySharedPreferences
 import com.hurriyet.basketapp.model.Product
+import com.hurriyet.basketapp.ui.baseViewModel.BaseViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver
@@ -26,7 +27,10 @@ class ProductListViewModel(application: Application) : BaseViewModel(application
     val getRequestLoading: LiveData<Boolean?> get() = requestLoading
     private val productsApiService = ProductAPIService()
     private val disposable = CompositeDisposable()
-    private var mySharedPreferences = MySharedPreferences(getApplication())
+    private var mySharedPreferences =
+        MySharedPreferences(
+            getApplication()
+        )
     private val refreshTime = 10 * 60 * 1000 * 1000 * 2000L
 
 
