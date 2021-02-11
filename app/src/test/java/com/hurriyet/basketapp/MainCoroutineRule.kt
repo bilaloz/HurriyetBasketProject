@@ -10,6 +10,9 @@ import kotlinx.coroutines.test.setMain
 import org.junit.rules.TestWatcher
 import org.junit.runner.Description
 
+/* Copyright 2019 Google LLC.
+   SPDX-License-Identifier: Apache-2.0 */
+
 @ExperimentalCoroutinesApi
 class MainCoroutineRule (
         private val dispatcher: CoroutineDispatcher = TestCoroutineDispatcher()

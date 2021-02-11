@@ -17,11 +17,11 @@ class ProductAPIService {
         .build()
         .create(ProductAPI::class.java)
 
-     fun getData(): Single<List<Product>> {
+    fun getData(): Single<List<Product>> {
         return api.getProductList()
     }
 
-    suspend fun postData(basket: Basket): Single<Basket> {
+    fun postData(basket: Basket): Single<Basket> {
         return api.postOrder(id = basket.id, amount = basket.count)
     }
 

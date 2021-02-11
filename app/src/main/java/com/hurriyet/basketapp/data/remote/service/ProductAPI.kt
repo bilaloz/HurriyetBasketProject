@@ -23,7 +23,7 @@ interface ProductAPI {
 
     @FormUrlEncoded
     @POST("order")
-    suspend fun postOrder(
+    fun postOrder(
         @Field("id") id: Int,
         @Field("amount") amount: Int
     ): Single<Basket>

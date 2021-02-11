@@ -10,10 +10,9 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
 import com.hurriyet.basketapp.R
 import com.hurriyet.basketapp.ui.productDetailFragment.ProductDetailFragment
-import com.hurriyet.basketapp.view.ProductDetailFragmentDirections
+import com.hurriyet.basketapp.ui.productDetailFragment.ProductDetailFragmentDirections
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.mockito.Mockito
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.verify
 
@@ -23,7 +22,7 @@ class ProductDetailTest {
 
     @Test
     fun testNavigationProductDetailFragmentToProductList() {
-        val navController = Mockito.mock(NavController::class.java)
+       // val navController = Mockito.mock(NavController::class.java)
         val mockNavController = mock(NavController::class.java)
 
         val firstScenario = launchFragmentInContainer<ProductDetailFragment>()

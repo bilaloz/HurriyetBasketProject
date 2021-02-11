@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.hurriyet.basketapp.data.local.sharedPreferences.MySharedPreferences
+import com.hurriyet.basketapp.model.Basket
 import com.hurriyet.basketapp.model.Product
 import com.hurriyet.basketapp.ui.baseViewModel.BaseViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -63,8 +64,8 @@ class ProductListViewModel(application: Application) : BaseViewModel(application
 
         requestLoading.value = true
         disposable.add(
-
-            productsApiService.getData().subscribeOn(Schedulers.newThread())
+            productsApiService.getData().
+            subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeWith(object : DisposableSingleObserver<List<Product>>() {
                     override fun onSuccess(t: List<Product>) {
